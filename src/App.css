@@ -1,0 +1,252 @@
+:root {
+  --mc: ;
+  --lc: #f9f9f9;
+  --dc: #444444;
+  --gc: #dddddd;
+}
+
+* {
+  border: 1px solid #f00;
+}
+
+.inner {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.w1200 {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  /* position: absolute;
+  padding-left: 380px; */
+}
+
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.Header .hd_wrap {
+  position: relative;
+  background: var(--lc);
+  color: var(--dc);
+  line-height: 100px;
+  transition: 0.5s;
+}
+
+.Header .hd_wrap:hover {
+  background: var(--dc);
+  color: var(--lc);
+}
+
+.Header h1 {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  font-size: 0;
+}
+
+.Header .hd_wrap h1 a {
+  display: inline-block;
+  font-size: 0;
+  width: 180px;
+  height: 60px;
+  background: url(../public/assets/images/logo.png) no-repeat;
+  vertical-align: middle;
+}
+
+.Header .hd_wrap:hover h1 a {
+  background: url(../public/assets/images/logo-c.png) no-repeat;
+}
+
+.Header.on .hd_wrap h1 a {
+  background: url(../public/assets/images/logo-c.png) no-repeat;
+}
+
+.Gnb>ul {
+  display: flex;
+  gap: 40px;
+}
+
+.Gnb>ul a {
+  display: block;
+}
+
+.Gnb>ul>li {
+  position: relative;
+}
+
+.Gnb li .smenu {
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f7f7f7;
+  width: 180px;
+  gap: 20px;
+  text-align: center;
+  border: 3px solid #FFD9EC;
+  color: #444444;
+  line-height: 35px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+}
+
+.Gnb li:hover .smenu {
+  top: 80px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.Header .top_service {
+  position: absolute;
+  top: 0;
+  right: 70px;
+  display: flex;
+  gap: 40px;
+}
+
+.Header .top_service .project li {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.Header .top_service .project li~li::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  background: var(--gc);
+  margin: 0 10px;
+}
+
+.Header .top_service strong {
+  cursor: pointer;
+}
+
+.Header .top_service strong:hover {
+  color: var(--sc);
+}
+
+.Header .top_service strong.on {
+  color: var(--sc);
+}
+
+.Header .top_service .lang {
+  position: relative;
+  float: left;
+  /* margin: 0 20px 0 0; */
+  font-size: 12px;
+}
+
+.Header .top_service .lang .arrow {
+  font-size: 7px;
+  vertical-align: 0.3em;
+}
+
+.Header .top_service .lang.on .arrow {
+  transform: rotate(180deg);
+}
+
+.Header .top_service .lang .lang_box {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 1.45;
+  border: 2px solid var(--mc);
+  background: var(--lc);
+  color: #444444;
+  padding: 20px 35px;
+}
+
+.Header .top_service .lang.on .lang_box {
+  display: block;
+}
+
+.Header .top_service .top_search {
+  position: relative;
+}
+
+.Header .top_search .search_box {
+  display: none;
+  position: absolute;
+  top: 80px;
+  right: -65px;
+  line-height: 1;
+  border: 1px solid var(--gc);
+  background: var(--lc);
+  padding: 30px 50px;
+  width: 600px;
+  text-align: center;
+}
+
+.Header .top_search.on .search_box {
+  display: block;
+}
+
+.Header .top_search .search_box input[type="text"] {
+  font-size: 20px;
+  width: 450px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--dc);
+}
+
+.Header .top_search .search_box button {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 30px;
+}
+
+.Header .top_search .search_box::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 60px;
+  width: 20px;
+  height: 20px;
+  background: var(--lc);
+  border-left: 1px solid var(--gc);
+  border-top: 1px solid var(--gc);
+  transform: rotate(45deg);
+}
+
+/* MV */
+.MainVisual {
+  position: relative;
+  color: var(--lc);
+
+
+}
+
+.MainVisual figure {
+  position: relative;
+  height: 120vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80% auto;
+  object-fit: cover;
+}
+
+.MainVisual .itm01 {
+  background-image: url(../public/assets/images/main_visual01.jpg);
+}
+
+.MainVisual .itm02 {
+  background-image: url(../public/assets/images/main_visual02.jpg);
+}
+
+.MainVisual .itm03 {
+  background-image: url(../public/assets/images/main_visual03.jpg);
+}
