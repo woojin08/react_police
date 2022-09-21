@@ -27,6 +27,12 @@ const Header = () => {
                         경찰청
                     </a>
                 </h1>
+                <h2>
+                    <a href="/">
+                    </a>
+                </h2>
+                <p className="tt">국기 상징 </p>
+                <p className="bt">알아보기</p>
                 <Nav />
                 {/* <nav className="Gnb inner">
                     <ul>

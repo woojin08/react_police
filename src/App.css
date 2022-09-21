@@ -5,9 +5,7 @@
   --gc: #dddddd;
 }
 
-* {
-  border: 1px solid #f00;
-}
+* {}
 
 .inner {
   position: relative;
@@ -35,19 +33,27 @@
   position: relative;
   background: var(--lc);
   color: var(--dc);
+  font-weight: 500;
   line-height: 100px;
   transition: 0.5s;
 }
 
-.Header .hd_wrap:hover {
-  background: var(--dc);
+.Header.on .hd_wrap {
+  background: rgba(0, 0, 0, 0.4);
   color: var(--lc);
+  font-weight: 300;
+  line-height: 80px;
+}
+
+.Header .hd_wrap:hover {
+  background: var(--lc);
+  color: var(--dc);
 }
 
 .Header h1 {
   position: absolute;
   top: 0;
-  left: 70px;
+  left: 350px;
   font-size: 0;
 }
 
@@ -61,11 +67,56 @@
 }
 
 .Header .hd_wrap:hover h1 a {
-  background: url(../public/assets/images/logo-c.png) no-repeat;
+  background: url(../public/assets/images/logo.png) no-repeat;
 }
 
 .Header.on .hd_wrap h1 a {
+  height: 50px;
   background: url(../public/assets/images/logo-c.png) no-repeat;
+}
+
+.Header h2 {
+  position: absolute;
+  top: 35px;
+  right: 550px;
+
+}
+
+.Header .hd_wrap h2 a {
+  position: absolute;
+  font-size: 10px;
+  width: 50px;
+  height: 40px;
+  background: url(../public/assets/images/banner_taegeukgi.png) no-repeat;
+
+}
+
+.Header.on .hd_wrap h2 a {
+  top: -10px;
+}
+
+.Header .hd_wrap .tt {
+  position: absolute;
+  width: 50px;
+  cursor: pointer;
+  font-size: 12px;
+  right: 430px;
+  bottom: -12px;
+  padding-bottom: 20px;
+}
+
+.Header .hd_wrap .bt {
+  position: absolute;
+  width: 50px;
+  cursor: pointer;
+  font-size: 12px;
+  right: 429px;
+  top: 10px;
+
+}
+
+.Gnb {
+  width: 720px;
 }
 
 .Gnb>ul {
@@ -226,27 +277,34 @@
 .MainVisual {
   position: relative;
   color: var(--lc);
-
+  height: 650px;
 
 }
 
 .MainVisual figure {
   position: relative;
-  height: 120vh;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 80% auto;
+  top: 100px;
+  height: 100vh;
+  border-radius: 0;
   object-fit: cover;
 }
 
+
 .MainVisual .itm01 {
-  background-image: url(../public/assets/images/main_visual01.jpg);
+  background: url(../public/assets/images/main_visual01.jpg) no-repeat center center/cover;
 }
 
 .MainVisual .itm02 {
-  background-image: url(../public/assets/images/main_visual02.jpg);
+  background: url(../public/assets/images/pop_20200227034413677.jpg) no-repeat center center/cover;
 }
 
 .MainVisual .itm03 {
-  background-image: url(../public/assets/images/main_visual03.jpg);
+  background: url(../public/assets/images/bg_main_visual_03.jpg)no-repeat center center/cover;
+}
+
+.MainVisual figure .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
