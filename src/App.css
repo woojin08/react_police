@@ -1,11 +1,13 @@
 :root {
-  --mc: ;
+  --mc: #003478;
   --lc: #f9f9f9;
   --dc: #444444;
   --gc: #dddddd;
 }
 
-* {}
+/* * {
+  border: 1px solid #ff0;
+} */
 
 .inner {
   position: relative;
@@ -19,6 +21,34 @@
   margin: 0 auto;
   /* position: absolute;
   padding-left: 380px; */
+}
+
+.csc {
+  position: relative;
+  padding: 400px 0 0 0;
+}
+
+.csc h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+.csc p {
+  font-size: 15px;
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+.inner {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.inner>* {
+  flex: 1;
 }
 
 .Header {
@@ -283,9 +313,8 @@
 
 .MainVisual figure {
   position: relative;
-  top: 100px;
+  top: 0;
   height: 100vh;
-  border-radius: 0;
   object-fit: cover;
 }
 
@@ -304,7 +333,172 @@
 
 .MainVisual figure .inner {
   position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.MainVisual .tit {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+  text-shadow: 0 0 2px var(--dc);
+  white-space: pre;
+
+}
+
+.MainVisual .des {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 0 30px 0;
+  text-shadow: 0 0 1px var(--dc);
+}
+
+.MainVisual .slick-track,
+.MainVisual .slick-slide {
+  transition-duration: 5ms;
+}
+
+.MainVisual .slideArrow i:first-child {
+  margin-left: -800px;
+}
+
+.MainVisual .slideArrow i:last-child {
+  margin-left: 800px;
+}
+
+.MainVisual .slideArrows button {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  border: none;
+  color: var(--lc);
+  font-size: 30px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.2);
+  line-height: 1;
+  border-radius: 50%;
+}
+
+.MainVisual .slideArrows button:first-child {
+  margin: 0 0 0 -800px;
+}
+
+.MainVisual .slideArrows button:last-child {
+  margin: 0 0 0 800px;
+}
+
+
+/* pf */
+
+.MainContent .arrows {
+  display: inline-block;
+  align-self: flex-start;
+  border: 1px solid var(--dc);
+  color: var(--dc);
+  font-size: 0;
+  margin-top: 20px;
+}
+
+.MainContent .arrows i {
+  padding: 10px;
+  font-size: 15px;
+
+}
+
+.MainContent .arrows i~i {
+  border-left: 1px solid var(--dc);
+}
+
+.MainContent .container {
+  display: flex;
+  width: calc(1200px + (100% - 1200px)/2);
+  margin: 0 0 0 auto;
+}
+
+/* .MainContent .container .right {
+  flex: 1;
+} */
+
+
+.MainContent .right_slide figure img {
+  cursor: pointer;
+  padding-left: 48px;
+
+}
+
+.MainContent .right_slide figure:hover {
+  color: var(--mc);
+  text-decoration: underline;
+}
+
+.MainContent .right {
+  display: flex;
+  flex-direction: column;
+}
+
+.MainContent .right .slide {
+  overflow: hidden;
+  margin: auto 0 0 0;
+}
+
+.MainContent .right_slide {
+  width: 1200px;
+}
+
+.MainContent .box {}
+
+.MainContent .des {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.MainContent .slideArrows button {
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background: transparent;
+  border: none;
+  color: var(--dc);
+  font-size: 20px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  line-height: 1;
+  border-radius: 50%;
+}
+
+.MainContent .slideArrows button:first-child {
+  margin: 0 0 0 -580px;
+}
+
+.MainContent .slideArrows button:last-child {
+  margin: 0 0 0 580px;
+}
+
+/* pf */
+.pfp {
+  position: relative;
+  padding: 100px 0;
+}
+
+.Portfolio h2 {
+  position: relative;
+  display: block;
+  /* padding: 20px 15px 20px 15px; */
+  margin: 100px 850px 50px;
+  font-size: 23px;
+  font-weight: 500;
+  text-align: center;
+
+
+}
+
+.Portfolio .box {
+  margin: 0 22px 40px 10px;
+  overflow: hidden;
 }

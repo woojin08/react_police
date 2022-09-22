@@ -49,8 +49,8 @@ const Header = () => {
                 </nav> */}
                 <div className="top_service">
                     <ul className="project">
-                        <li><a href="#!">주요프로젝트</a></li>
-                        <li><a href="#!">IR</a></li>
+                        <li><a href="#!">경찰전자우편</a></li>
+                        <li><a href="#!">사이트맵</a></li>
                     </ul>
                     <div className={'lang ' + (TG ? 'on' : '')}>
                         <strong onClick={() => setTG(!TG)}><i className="xi-globus"></i> KOR <i className="xi-angle-down arrow"></i></strong>
