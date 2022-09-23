@@ -36,45 +36,31 @@ const Header = () => {
                 <p className="tt">국기 상징 </p>
                 <p className="bt">알아보기</p>
                 <Nav />
-                {/* <nav className="Gnb inner">
-                    <ul>
-                        {
-                            NAVLINK.map((it, idx) => {
-                                return (
-                                    <li key={it.id}>
-                                        <a href={it.link}>{it.menu}</a>
-                                    </li>
-                                )
-                            })
-                        }
-                    </ul>
-                </nav> */}
+
                 <div className="top_service">
                     <ul className="project">
                         <li><a href="#!">경찰전자우편</a></li>
                         <li><a href="#!">사이트맵</a></li>
                     </ul>
-                    <div className={'lang ' + (TG ? 'on' : '')}>
+                    {/* <div className={'lang ' + (TG ? 'on' : '')}>
                         <strong onClick={() => setTG(!TG)}><i className="xi-globus"></i> KOR <i className="xi-angle-down arrow"></i></strong>
                         <ul className="lang_box">
                             <li><a href="#!">KOR</a></li>
                             <li><a href="#!">ENG</a></li>
                             <li><a href="#!">CHN</a></li>
                         </ul>
-                    </div>
+                    </div> */}
                     <div className={`top_search ${TGS ? 'on' : ''}`}>
                         <strong onClick={() => setTGS(!TGS)}><i className="xi-search"></i></strong>
                         <div className="search_box">
 
                             <form action="#!">
-                                {/* <input type="text" placeholder="검색어를 입력하세요" required /> */}
+
                                 <input type="text" placeholder="검색어를 입력하세요" onChange={(e) => {
                                     setValue(e.target.value)
                                 }} value={value} ref={input} />
 
-                                {/* <button>
-                                    <i className="xi-search"></i>
-                                </button> */}
+
                             </form>
                         </div>
                     </div>

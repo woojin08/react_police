@@ -33,10 +33,7 @@ const MainVisual = () => {
                                 <div className="inner">
                                     <p className='tit'>{slide.content}</p>
                                     <div className='desc'>{slide.desc}</div>
-                                    {/* <a href={slide.link} target="_blank" className='cbtn'>
-                                        VIEW MORE
-                                        <i className='xi-angle-right'></i>
-                                    </a> */}
+
                                 </div>
                             </figure>
                         )
@@ -46,10 +43,7 @@ const MainVisual = () => {
             <div className="slideNum">
                 0{IDX + 1}<span> / 0{SLIDE.length}</span>
             </div>
-            {/* <div className="slideArrows">
-                <button onClick={() => mainSlide.current.slickPrev()}><i className='xi-angle-left'></i></button>
-                <button onClick={() => mainSlide.current.slickNext()}><i className='xi-angle-right'></i></button>
-            </div> */}
+
             <ul className="slideDot">
                 {
                     SLIDE.map((dot, idx) => <li key={dot.id}

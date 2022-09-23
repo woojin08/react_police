@@ -14,7 +14,6 @@ const PTF = [
     { id: 9, title: "총포 화약\n 안전관리" },
 ]
 
-// 배열 메소드를 공부하기... 검색하기... 스프레드 연산자...
 const NPTF = [...PTF, PTF[0]].splice(1, PTF.length);
 
 const MainContent = () => {
@@ -32,29 +31,7 @@ const MainContent = () => {
     return (
         <section className="MainContent csc">
             <div className="container">
-                {/* <div className="left">
-                    <div className="slide">
-                        <Slider
-                            fade={true}
-                            ref={LS}
-                            asNavFor={RSS}
-                            arrows={false}
-                        >
-                            {
-                                PTF.map(content => {
-                                    return (
-                                        <figure key={content.id}>
-                                            <div className="box">
-                                                <img src={process.env.PUBLIC_URL + "/assets/images/main_m0" + content.id + ".jpg"} alt="" />
-                                            </div>
-                                            <div className='des'>{content.title}</div>
-                                        </figure>
-                                    )
-                                })
-                            }
-                        </Slider>
-                    </div>
-                </div> */}
+
                 <div className="right">
                     <h2>대민서비스</h2>
                     <p></p>
@@ -79,10 +56,7 @@ const MainContent = () => {
                                 })
                             }
                         </Slider>
-                        {/* <div className="arrows">
-                            <i className='xi-angle-left' onClick={() => LS.current.slickPrev()}></i>
-                            <i className='xi-angle-right' onClick={() => LS.current.slickNext()}></i>
-                        </div> */}
+
                         <div className="slideArrows">
                             <button onClick={() => LS.current.slickPrev()}><i className='xi-arrow-left'></i></button>
                             <button onClick={() => LS.current.slickNext()}><i className='xi-arrow-right'></i></button>

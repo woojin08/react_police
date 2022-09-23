@@ -77,8 +77,8 @@
 }
 
 .Header .hd_wrap:hover {
-  background: var(--lc);
-  color: var(--dc);
+  background: rgba(0, 0, 0, 0.4);
+  color: var(--lc);
 }
 
 .Header h1 {
@@ -575,19 +575,19 @@
   text-align: center;
   height: 325px;
   border-radius: 5%;
-  transition: border-radius 0.5s 0.5s;
   background: var(--lc);
 }
 
 .Portfolio .box figure {
   cursor: pointer;
+  object-fit: cover;
 }
 
 
 .Portfolio .tit {
   color: var(--dc);
   display: block;
-  margin: 7px 0 10px 0;
+  margin: 15px 0 5px 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.4;
@@ -683,7 +683,7 @@
 .Promotion .des li:last-child::after {
   content: "";
   position: absolute;
-  top: 15%;
+  top: 25%;
   left: calc(51% - 5px);
   width: 4px;
   height: 15px;
