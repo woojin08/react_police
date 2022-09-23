@@ -27,9 +27,10 @@ const DB = [
         content: "신고/지원",
         link: "/s1",
         submenu: [
-            { content: "smenu031", link: "/1" },
-            { content: "smenu032", link: "/2" },
-            { content: "smenu033", link: "/3" },
+            { content: "범죄신고/상담", link: "/1" },
+            { content: "사이버안전지킴이", link: "/2" },
+            { content: "안심서비스", link: "/3" },
+            { content: "치안정보/지원", link: "/4" },
 
         ]
     },
@@ -38,9 +39,10 @@ const DB = [
         content: "정보공개",
         link: "/s1",
         submenu: [
-            { content: "smenu031", link: "/1" },
-            { content: "smenu032", link: "/2" },
-            { content: "smenu033", link: "/3" },
+            { content: "정보공개제도", link: "/1" },
+            { content: "재정현황", link: "/2" },
+            { content: "사전정보공표", link: "/3" },
+            { content: "공공데이터", link: "/4" },
 
         ]
     },
@@ -49,9 +51,9 @@ const DB = [
         content: "법령/정책",
         link: "/s1",
         submenu: [
-            { content: "smenu031", link: "/1" },
-            { content: "smenu032", link: "/2" },
-            { content: "smenu033", link: "/3" },
+            { content: "법령정보", link: "/1" },
+            { content: "국회정보공개", link: "/2" },
+            { content: "규제개혁", link: "/3" },
 
         ]
     },
@@ -60,9 +62,10 @@ const DB = [
         content: "기관소개",
         link: "/s1",
         submenu: [
-            { content: "smenu031", link: "/1" },
-            { content: "smenu032", link: "/2" },
-            { content: "smenu033", link: "/3" },
+            { content: "열린청장실", link: "/1" },
+            { content: "조직안내", link: "/2" },
+            { content: "경찰의이해", link: "/3" },
+            { content: "경찰역사", link: "/4" },
 
         ]
     },

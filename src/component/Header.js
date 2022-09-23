@@ -6,6 +6,8 @@ const Header = () => {
     const [TG, setTG] = useState(false);
     const [TGS, setTGS] = useState(false);
     const HL = useRef();
+    const [value, setValue] = useState('')
+    const input = useRef(null)
     useEffect(() => {
         window.addEventListener("scroll", () => {
             let sct = window.scrollY;
@@ -65,10 +67,14 @@ const Header = () => {
                         <div className="search_box">
 
                             <form action="#!">
-                                <input type="text" placeholder="검색어를 입력하세요" required />
-                                <button>
+                                {/* <input type="text" placeholder="검색어를 입력하세요" required /> */}
+                                <input type="text" placeholder="검색어를 입력하세요" onChange={(e) => {
+                                    setValue(e.target.value)
+                                }} value={value} ref={input} />
+
+                                {/* <button>
                                     <i className="xi-search"></i>
-                                </button>
+                                </button> */}
                             </form>
                         </div>
                     </div>
