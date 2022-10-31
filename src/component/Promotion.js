@@ -3,7 +3,7 @@ import YouTube from 'react-youtube';
 
 const UURL = [
     {
-        id: 1, url: "0I4PdwvGwPI", title: "🚨말 없는 112 신고 캠페인 똑똑🚨", des: "숫자 버튼을 눌러 말하기 곤란한 상황임을 알려주세요."
+        id: 1, url: "S1tp9z5UQE8", title: "🚨말 없는 112 신고 캠페인 똑똑🚨", des: "숫자 버튼을 눌러 말하기 곤란한 상황임을 알려주세요."
     },
     { id: 2, url: "ChYcYxWrYYY", title: "시민들이 만들어 준 기적 ✨", des: "#모세의기적 #경찰청" },
 ]
@@ -11,7 +11,7 @@ const UURL = [
 const Promotion = () => {
     const MOVIE = useRef();
 
-    const [url, setUrl] = useState('0I4PdwvGwPI');
+    const [url, setUrl] = useState('S1tp9z5UQE8');
     const [tit, setTit] = useState(0);
     const [auto, setAuto] = useState(0);
 
@@ -27,8 +27,6 @@ const Promotion = () => {
             // autohide: 1,
             playsinline: 1,
             mute: 1,
-            //playlist: 'raw3Nu0_mBQ',
-            //paused: 1,
         },
 
     };

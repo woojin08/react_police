@@ -20,7 +20,7 @@ const Header = () => {
 
     return (
         <header className="Header" ref={HL}>
-            {/* <TopBanner /> */}
+            <TopBanner />
 
 
             <div className="hd_wrap">
@@ -42,14 +42,14 @@ const Header = () => {
                         <li><a href="#!">경찰전자우편</a></li>
                         <li><a href="#!">사이트맵</a></li>
                     </ul>
-                    {/* <div className={'lang ' + (TG ? 'on' : '')}>
+                    <div className={'lang ' + (TG ? 'on' : '')}>
                         <strong onClick={() => setTG(!TG)}><i className="xi-globus"></i> KOR <i className="xi-angle-down arrow"></i></strong>
                         <ul className="lang_box">
                             <li><a href="#!">KOR</a></li>
                             <li><a href="#!">ENG</a></li>
                             <li><a href="#!">CHN</a></li>
                         </ul>
-                    </div> */}
+                    </div>
                     <div className={`top_search ${TGS ? 'on' : ''}`}>
                         <strong onClick={() => setTGS(!TGS)}><i className="xi-search"></i></strong>
                         <div className="search_box">
@@ -59,8 +59,6 @@ const Header = () => {
                                 <input type="text" placeholder="검색어를 입력하세요" onChange={(e) => {
                                     setValue(e.target.value)
                                 }} value={value} ref={input} />
-
-
                             </form>
                         </div>
                     </div>

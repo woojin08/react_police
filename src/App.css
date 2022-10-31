@@ -3,12 +3,9 @@
   --lc: #f9f9f9;
   --dc: #444444;
   --gc: #dddddd;
+  --pc: #4374D9;
 }
 
-
-/* * {
-  border: 1px solid #ff0;
-} */
 
 .inner {
   position: relative;
@@ -20,8 +17,6 @@
   position: relative;
   width: 1200px;
   margin: 0 auto;
-  /* position: absolute;
-  padding-left: 380px; */
 }
 
 .csc {
@@ -50,6 +45,42 @@
 
 .inner>* {
   flex: 1;
+}
+
+.TopBanner {
+  background: var(--mc);
+  color: var(--lc);
+  overflow: hidden;
+  height: 120px;
+}
+
+.TopBanner.on {
+  height: 0;
+  transition: 0.5s;
+}
+
+.TopBanner .inner {
+  padding: 60px 0;
+}
+
+.TopBanner i {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  font-size: 18px;
+}
+
+.TopBanner h2 {
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0 0 10px 0;
+  line-height: 1.2;
+}
+
+.TopBanner span {
+  font-size: 23px;
+  font-weight: 700;
+  color: var(--pc)
 }
 
 .Header {
@@ -110,7 +141,6 @@
   position: absolute;
   top: 35px;
   right: 500px;
-
 }
 
 .Header .hd_wrap h2 a {
@@ -321,11 +351,11 @@
 
 
 .MainVisual .itm01 {
-  background: url(../public/assets/images/main_visual01.jpg) no-repeat center center/cover;
+  background: url(../public/assets/images/bg_main_visual_01.jpg) no-repeat center center/cover;
 }
 
 .MainVisual .itm02 {
-  background: url(../public/assets/images/pop_20200227034413677.jpg) no-repeat center center/cover;
+  background: url(../public/assets/images/bg_main_visual_02.jpg) no-repeat center center/cover;
 }
 
 .MainVisual .itm03 {
@@ -448,7 +478,6 @@
   position: absolute;
   width: 0;
   height: 100%;
-  /* background: #662500; */
   background: var(--mc);
 }
 
@@ -484,10 +513,6 @@
   margin: 0 0 0 auto;
 }
 
-/* .MainContent .container .right {
-  flex: 1;
-} */
-
 
 .MainContent .right_slide figure img {
   cursor: pointer;
@@ -513,8 +538,6 @@
 .MainContent .right_slide {
   width: 1200px;
 }
-
-.MainContent .box {}
 
 .MainContent .des {
   cursor: pointer;
@@ -621,10 +644,7 @@
 }
 
 /* pm */
-.Promotion {
-  /* background: url(../public/assets/images/main_visual01.jpg) no-repeat bottom; */
-
-}
+.Promotion {}
 
 .Promotion figure {
   padding: 30px 0 0 0;
